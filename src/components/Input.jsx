@@ -8,12 +8,7 @@ function Input({ type, name, required, value, id, formData, setFormData, checked
         })
     }
 
-    function handleSubmit(e) {
-        e.preventDefault()
-        console.log(formData)
-    }
-
-    return (<input type={type} name={name} required={required} value={value} id={id} onChange={handleChange} onSubmit={(e) => handleSubmit(e)} checked={checked}/>)
+    return (<input type={type} name={name} required={required} value={value} id={id} onChange={handleChange} checked={checked}/>)
 }
 
 export default Input

@@ -15,12 +15,14 @@ export default function App() {
     consent: false
   })
 
-  
-  console.log(formData)
+  function handleSubmit(e) {
+    e.preventDefault()
+    console.log(formData)
+}
 
   return (
     <>
-      <form className="form">
+      <form className="form" onSubmit={handleSubmit}>
         <h2>Complaining form!</h2>
         <div className="form__section-left">
           <label>
